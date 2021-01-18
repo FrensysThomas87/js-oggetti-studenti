@@ -18,19 +18,19 @@ var listaStudenti = {
     {
       'nome': 'Mario',
       'cognome': 'Rossi',
-      'età': 20
+      'eta': 20
     },
 
     {
       'nome': 'Marco',
       'cognome': 'Bianchi',
-      'età': 30
+      'eta': 30
     },
 
     {
       'nome': 'Gianluca',
       'cognome': 'Mariani',
-      'età': 40
+      'eta': 40
     }
   ]
 
@@ -44,28 +44,23 @@ for(var x = 0; x < listaStudenti.students.length; x++){
   learner = listaStudenti.students[x];
 
 
-    // console.log(learner.nome);
-    // console.log(learner.cognome);
-
-    for(var s in learner){
-      console.log(s + ' ha valore ' + learner.name);
-    }
-
+    console.log(learner.nome);
+    console.log(learner.cognome);
 
 }
 
 
 
 
-// while(listaStudenti.students.length < listaStudenti.numStudenti){
-//   var nuovoStudente = {};
-//    nuovoStudente.nome = prompt('Inserisci il tuo nome');
-//
-//    nuovoStudente.cognome = prompt('Inserisci il tuo cognome');
-//
-//    nuovoStudente.età = parseInt(prompt('Inserisci la tua eta'));
-//
-//    listaStudenti.push(nuovoStudente);
-// }
-//
-// console.log(listaStudenti);
+while(listaStudenti.students.length < listaStudenti.numStudenti){
+  var nuovoStudente = {};
+   nuovoStudente.nome = prompt('Inserisci il tuo nome');
+
+   nuovoStudente.cognome = prompt('Inserisci il tuo cognome');
+
+   nuovoStudente.età = parseInt(prompt('Inserisci la tua eta'));
+
+   listaStudenti.students.push(nuovoStudente);
+}
+
+console.log(listaStudenti.students);
