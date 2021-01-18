@@ -41,3 +41,18 @@ for(var s in listaStudenti){
   // alert('Le proprietà di studente sono: ' + key + ' ' + studente[key]);
   console.log(listaStudenti[s]);
 }
+
+
+
+while(listaStudenti.length < 6){
+  var nuovoStudente = {};
+   nuovoStudente.nome = prompt('Inserisci il tuo nome');
+
+   nuovoStudente.cognome = prompt('Inserisci il tuo cognome');
+
+   nuovoStudente.età = parseInt(prompt('Inserisci la tua eta'));
+
+   listaStudenti.push(nuovoStudente);
+}
+
+console.log(listaStudenti);
