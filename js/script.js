@@ -1,16 +1,16 @@
-// var studente = {
-//   'nome': 'Francesco',
-//   'cognome': 'Tomassini',
-//   'età': '33'
-// }
-//
-// console.log(typeof studente);
-//
-//
-// for(var key in studente){
-//   // alert('Le proprietà di studente sono: ' + key + ' ' + studente[key]);
-//   console.log('Le proprietà di studente sono: ' + key + ' ' +  studente[key]);
-// }
+var studente = {
+  'nome': 'Francesco',
+  'cognome': 'Tomassini',
+  'età': '33'
+}
+
+console.log(typeof studente);
+
+
+for(var key in studente){ // ciclo nelle proprietà di studente
+
+  console.log(key + ' ' +  studente[key]);
+}
 
 var listaStudenti = {
   'numStudenti': 6,
@@ -54,13 +54,15 @@ for(var x = 0; x < listaStudenti.students.length; x++){
 
 while(listaStudenti.students.length < listaStudenti.numStudenti){
   var nuovoStudente = {};
-   nuovoStudente.nome = prompt('Inserisci il tuo nome');
+
+   nuovoStudente.nome = prompt('Inserisci il tuo nome'); // Ad ogni prompt creo la chiave , in questo caso nome, e il suo valore
 
    nuovoStudente.cognome = prompt('Inserisci il tuo cognome');
 
    nuovoStudente.età = parseInt(prompt('Inserisci la tua eta'));
 
-   listaStudenti.students.push(nuovoStudente);
+   listaStudenti.students.push(nuovoStudente); // Pusho l'oggetto studente dentro l'oggetto listastudenti dentro l'array students
 }
+
 
 console.log(listaStudenti.students);
